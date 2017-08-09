@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+/* ucsd insight global */
+
+/** FONTS **/
+@font-face {
+    font-family: 'Simplifica';
+    src: url('../fonts/Simplifica.ttf') -format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Bell Gothic Std';
+    src: url('../fonts/BellGothicStd-Black.otf') -format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Bell Gothic STD Black';
+    src: url('../fonts/BellGothicStd-Bold.otf') -format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+	margin: 0px; padding: 0px;
+}
+ul { 
+	list-style-type: none;
+}
+nav li {
+	display: inline;
+	float: left;
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #7ec186;
+}
+
+body {
+	background-color: #fff;
+	color: #3a352f;
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 16px;
+}
+
+nav {
+	width: 100%;
+	height: 50px;	
+	background-color: #3a352f;
+}
+
+nav #container {
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+nav #logo {
+	display: inline;
+	font-family: 'Simplifica';
+	font-size: 46px;
+	font-style: bold;
+	color: #80d3bb;
+	padding: 0px 23px 0px 0px;
+	float: left;
+}
+
+nav #current-page {
+	display: inline-block;
+	width: 145px;
+	height: 50px;
+	color: #3a352f;
+	background-color: #80d3bb;
+	text-decoration: none;
+	font-family: 'Bell Gothic Std';
+	font-size: 16px;
+	font-style: bold;
+	line-height: 3;
+}
+
+nav a {
+	display: inline-block;
+	width: 145px;
+	height: 50px;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Bell Gothic Std';
+	font-size: 16px;
+	font-style: bold;
+	line-height: 3;
+	-o-transition: color 0.5s linear;
+	-moz-transition: color 0.5s linear;
+	-khtml-transition: color 0.5s linear;
+	-webkit-transition: color 0.5s linear;
+	-ms-transition: color 0.5s linear;
+	transition: color 0.5s linear;
+
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+nav a:hover {
+	color: #3a352f;
+	background-color: #bafdc2;
+}
+
+div .page-wrap {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+div .banner {
+	width: 100%;
+	height: 315px;
+	background-color: #80d3bb;
+}
+
+.banner img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div .top {
+	display: block;
+	width: 100%;
+	height: 200px;
+	background-color: #ffffff;
+	box-shadow: 0px 5px 5px 0px #cccccc;
+	position: relative;
+	z-index: 1;
+}
+
+.top article {
+	font-family: 'Simplifica';
+	font-size: 90px;
+	font-weight: bold;
+	text-align: center;
+	color: #80d3bb;
+	margin: 0 auto;
+	clear: both;
+	padding: 10px 0px 10px 0px;
+}
+
+.top hr {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.top p {
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 25px;
+	font-style: oblique;
+	text-align: center;
+	color: #3a352f;
+	margin: 0 auto;
+	clear: both;
+	padding: 20px 0px 10px 0px;
+}
+
+h1 {
+	font-family: 'Simplifica';
+	font-size: 48px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+h2 {
+	font-family: 'Bell Gothic STD Black', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #3a352f;
+}
+
+label {
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 13px;
+	color: #666666;
+}
+
+footer {
+	width: 100%;
+	height: 230px;
+	background-color: #3a352f;
+	display: inline-block;
+	font-size: 13px;
+}
+
+footer a {
+	font-weight: normal;
+}
+
+footer #footer-container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 15px 0px 15px 0px;
+}
+
+footer #footer-left {
+	width: 450px;
+	display: inline-block;
+	text-align: left;
+	line-height: 2;
+	float: left;
+}
+
+footer #club-logo {
+	display: inline-block;
+	width: 180px;
+	height: 170px;
+	float: left;
+}
+
+footer #club-logo img {
+	width: 180px;
+	height: 170px;
+}
+
+footer #footer-mid {
+	width: 300px;
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+}
+
+#footer-mid h2 {
+	color: #fff;
+}
+
+#footer-mid img {
+	width: 30px;
+	height: 30px;
+}
+
+#footer-mid p {
+	margin: 10px 0px 10px 0px;
+}
+
+footer #footer-bottom {
+	text-align: center;
+	color: #fff;
+	clear: both;
+}
+
+.page-wrap .arrow {
+	position: absolute;
+	z-index: 500;
+}
+
+.arrow #head-arrow {
+	position: absolute;
+	top: 280px;
+	left: 555px;
+}

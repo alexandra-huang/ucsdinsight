@@ -1,0 +1,354 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>UCSD Insight - Home</title>
+<link rel="stylesheet" href="css/global.css" media="all">
+
+<style type="text/css">
+
+	#content {
+		width: 790px;
+		padding: 30px 10px 30px 10px;
+		text-align: left;
+		float: left;
+	}
+
+	#content-container {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+
+	#sidebar {
+		background-color: #e9e7e4;
+		padding: 30px 10px 30px 10px;
+		text-align: center;
+		height: 100%;
+		position: absolute;
+		right: 0;
+	}
+
+	#content h1 {
+		color: #80d3bb;
+	}
+
+	#content p {
+		padding: 10px 0px 10px 0px;
+	}
+
+	#content hr {
+		width: 100%;
+		margin: 20px 0px 20px 0px;
+	}
+
+	#content img {
+		display: block;
+		width: 300px;
+		border-radius: 3px;
+		margin: 0 10px 10px 0;
+		float: left;
+	}
+
+	#to-events {
+		font-size: 24px;
+		text-align: right;
+		margin: 10px 0px 10px 0px;
+	}
+
+	.arrow #nav-arrow {
+		position: absolute;
+		left: 240px;
+	}
+
+	/* slideshow css */
+	.rslides {
+	  position: relative;
+	  list-style: none;
+	  overflow: hidden;
+	  width: 100%;
+	  padding: 0;
+	  margin: 0;
+	}
+
+	.rslides li {
+	  -webkit-backface-visibility: hidden;
+	  position: absolute;
+	  display: none;
+	  width: 100%;
+	  left: 0;
+	  top: 0;
+	}
+
+	.rslides li:first-child {
+	  position: relative;
+	  display: block;
+	  float: left;
+	}
+
+	.rslides img {
+	  display: block;
+	  height: 315px;
+	  width: 1200px;
+	  border: 0;
+	}
+
+	.callbacks_container {
+	  position: relative;
+	  margin: 0 auto;
+	  width: 1200px;
+	}
+
+	.callbacks {
+	  position: relative;
+	  list-style: none;
+	  overflow: hidden;
+	  width: 100%;
+	  padding: 0;
+	  margin: 0;
+	}
+
+	.callbacks li {
+	  position: absolute;
+	  width: 100%;
+	  left: 0;
+	  top: 0;
+	}
+
+	.callbacks img {
+	  display: block;
+	  position: relative;
+	  z-index: 1;
+	  border: 0;
+	}
+
+	.callbacks_nav {
+	  position: absolute;
+	  -webkit-tap-highlight-color: rgba(0,0,0,0);
+	  top: 52%;
+	  left: 0;
+	  opacity: 0.7;
+	  z-index: 3;
+	  text-indent: -9999px;
+	  overflow: hidden;
+	  text-decoration: none;
+	  height: 61px;
+	  width: 38px;
+	  background: transparent url("themes.gif") no-repeat left top;
+	  margin-top: -45px;
+	}
+
+	.callbacks_nav:active {
+	  opacity: 1.0;
+	}
+
+	.callbacks_nav.next {
+	  left: auto;
+	  background-position: right top;
+	  right: 0;
+	}
+</style>
+
+<!-- image carousel -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script>
+  $(function() {
+    $(".rslides").responsiveSlides({
+    	auto: true,
+    	speed: 800,
+    	nav: true,
+    	namespace: "callbacks"
+    });
+  });
+</script>
+
+
+<!-- text visibility toggle-->
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("#ShowMeb").hide();
+		$("#ShowMea").click(function(event) {
+			event.preventDefault();
+			$("#ShowMeb").toggle();
+		});
+		$("#ShowMed").hide();
+		$("#ShowMec").click(function(event) {
+			event.preventDefault();
+			$("#ShowMed").toggle();
+		});
+		$("#ShowMef").hide();
+		$("#ShowMee").click(function(event) {
+			event.preventDefault();
+			$("#ShowMef").toggle();
+		});
+		$("#ShowMeh").hide();
+		$("#ShowMeg").click(function(event) {
+			event.preventDefault();
+			$("#ShowMeh").toggle();
+		});
+		$("#ShowMej").hide();
+		$("#ShowMei").click(function(event) {
+			event.preventDefault();
+			$("#ShowMej").toggle();
+		});
+		$("#ShowMel").hide();
+		$("#ShowMek").click(function(event) {
+			event.preventDefault();
+			$("#ShowMel").toggle();
+		});
+	});
+</script>
+
+</head>
+
+<body>
+
+	<div class="page-wrap">
+
+		<nav>
+		<nav id="container">
+			<div id="logo">
+				UCSD INSIGHT
+			</div>
+
+			<ul>
+				<li><div id="current-page">Home</div></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="officers.html">Officers</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="members.html">Members</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="join.html">Join Us</a></li>
+			</ul>
+		</nav>
+		<div class="page-wrap">
+			<div class="arrow"><img id="nav-arrow" src="images/nav_arrow.png"></div>
+		</div>
+		</nav>
+
+		<div class="page-wrap">
+		<div class="arrow"><img id="head-arrow" src="images/head_arrow.png"></div>
+		</div>
+
+		<div class="banner">
+			<div class="callbacks_container">
+			<ul class="rslides">
+				<li><img src="images/banner.png" alt=""></li>
+				<li><img src="images/banner-2.png" alt=""></li>
+				<li><img src="images/banner-3.png" alt=""></li>
+			</ul>
+			</div>
+			<!-- <img src="images/banner.png"> -->
+		</div>
+		
+		<div class="top">
+			<article>UCSD INSIGHT</article>
+			<hr>
+			<p>Bringing you one step closer to <strong>your future</strong> in optometry.</p>
+		</div>
+
+	<div class="page-wrap">
+		<div id="content-container">
+		<div id="content">
+			<h1>Recent news and upcoming events</h1>
+			<h2>ICO Presentation from a 1st Year Optometry Student</h2>
+			<label>on <strong>12 February 2015</strong></label>
+			<p>
+				I hope everyone was able to learn a lot from our doctor’s panel tonight! Thank you to everyone who came out. As such, our next event features a first year optometry student attending Illinois College of Optometry. This is perfect if you are interested in optometry or ICO after listening to the doctors present.
+				<br>
+				<br><strong>Where:</strong> ERC Room
+				<br><strong>When:</strong> Wed. February 18 at 7:00pm
+				<br><strong>RSVP:</strong> None required
+			</p>
+
+			<hr>
+
+			<h2>Insight GBM + Doctor's Panel</h2>
+			<label>on <strong>08 February 2015</strong></label>
+			<p>
+				Hello Insight! Come out to our second GBM, which will include a doctor’s panel featuring doctors in our local community. It’s a great opportunity to ask all your questions, network, and learn about the field straight from the source. <a href="#" id="ShowMec">Read more &#8594;</a>
+				<div  display="none" id="ShowMed">
+					<p>
+						Featuring:
+						<p>Dr. David Weldon - UCSD Student Health Services Optical (NECO)
+						<br>Dr. Heather Jonasson - UCSD Student Health Services Optical (Berkeley) 
+						<br>Dr. Henry Kikunaga - Bonita Point Family Optical (ICO)
+						<br>Dr. Jason Tu - Downtown Optometry (SCCO)
+						<br>Dr. Robert Grazian - Santee Vision Care Center (ICO)</p>
+
+						<p>Come with a warm, welcoming attitude and any questions you have for our doctors!</p>
+					</p>
+				</div>
+				<br><strong>Where:</strong> Red Shoe Room
+				<br><strong>When:</strong> Wed. February 11 at 6:30pm
+				<br><strong>RSVP:</strong> None required
+			</p>
+
+			<hr>
+
+			<h2>Insight NVision Laser Eye Center Tour!</h2>
+			<label>on <strong>01 February 2015</strong></label>
+			<p>
+				<!-- <img src="http://hocphache.giaiphaplytuong.com/uploads/images/news/1385866989_news_210.jpg"> -->
+				Hey everyone! Ever wondered what a Lasik facility looks like? UCSD Insight is organizing a club tour at the NVision Laser Eye Center on Nobel Court. If you’re interested in this 30 minute tour of the center and a chance to meet one of the surgeons, fill out the form below ASAP.
+				<br>
+				<br><strong>Where:</strong> NVision Laser Eye Center: 3655 Nobel Dr. San Diego, CA 92122
+				<br><strong>When:</strong> Fri. February 06 at 9:00am
+				<br><strong>RSVP:</strong> Fill out <a href="https://docs.google.com/forms/d/1zkhQq0kpALyOXK8iPzmP3PIcbl2pDUzjdsRrNet-0cw/viewform?c=0&w=1" target="_blank">this form</a>
+			</p>
+
+			<div id="to-events"><a href="events.html">View all events &#8594;</a></div>
+		</div>
+
+		<div id="sidebar">
+			<h1>Find us on Facebook</h1>
+			<!--<iframe allowtransparency="true" src="http://www.facebook.com/connect/connect.php?id=143042925735028&amp;connections=0&amp;stream=1" style="border: none; width: 300px; height: 380px;" frameborder="1" scrolling="no"></iframe>-->
+			<!-- <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fucsd.insight%2F&amp;width&amp;height=427&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=true&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:427px;" allowTransparency="true"></iframe> -->
+			<!-- <img src="images/fb plugin.png"> -->
+			<a href="http://www.facebook.com/groups/ucsd.insight" target="_blank"><img src="images/fb.png"></a>
+		</div>
+	</div>
+
+	</div><!--page wrap-->
+
+	<!--footer-->
+	<footer>
+		<div id="footer-container">
+			<div id="footer-left">
+				<div id="club-logo"><img src="images/logo_transparent.png"></div>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="officers.html">Officers</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="members.html">Members</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="join.html">Join Us</a></li>
+				</ul>
+			</div>
+
+			<div id="footer-mid">
+				<h2>Contact Us</h2>
+				<p>
+					<a href="http://www.facebook.com/groups/ucsd.insight" target="_blank">
+						<img src="images/facebook4.png">
+						</a>
+				</p>
+				<p> insight.ves@gmail.com
+					<br>Insight Pre-Optometry, MC 0078
+					<br>University of California, San Diego
+					<br>9500 Gilman Drive
+					<br>La Jolla, CA 92093-0078
+				</p>
+			</div>
+
+			<div id="footer-bottom">
+				&#169; 2015 UCSD Insight. All rights reserved.
+			</div>
+		</div>
+	</footer>
+	<!--end footer-->
+
+</body>
